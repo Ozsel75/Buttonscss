@@ -14,21 +14,18 @@ body {
 }
 
 .button1{
-    display: flex;    
-    overflow: hidden;
-}
-
-.button1 a {
+    display: flex; 
     text-decoration: none;
     font-size: 20px;
     border: 3px solid #351435;
     color: #351435;
     padding: 20px 40px;
     position: relative;
-    transition: all 1s;
+    transition: all 0.6s;   
+    overflow: hidden;
 }
 
-.button1 a:before{
+.button1:before{
     content: "";
     position: absolute;
     left: 0;
@@ -41,10 +38,10 @@ body {
     transition: all 1s;
     }
 
-.button1 a:hover:before {
+.button1:hover:before {
     transform: translateX(0);
     }
 
-.button1 a:hover {
+.button1:hover {
     color: whitesmoke;
 }    
