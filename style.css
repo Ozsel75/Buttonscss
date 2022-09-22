@@ -11,10 +11,11 @@ body {
 .buttons {
     margin-top: 10vh;
     display: flex;
+    gap: 40px;
 }
 
 .button1{
-    display: flex; 
+   
     text-decoration: none;
     font-size: 20px;
     border: 3px solid #351435;
@@ -44,4 +45,129 @@ body {
 
 .button1:hover {
     color: whitesmoke;
-}    
+}
+
+/* ----button2---------- */ 
+
+.button2{
+   
+    text-decoration: none;
+    font-size: 20px;
+    border: 3px solid #262626;
+    color: #262626;
+    padding: 20px 40px;
+    position: relative;
+    transition: all 0.6s;   
+    overflow: hidden;
+}
+
+.button2:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #262626;
+    z-index: -1;
+    transform: rotateX(90deg);
+    transition: all 1s;
+    }
+.button2:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #262626;
+    z-index: -1;
+    transform: rotatey(90deg);
+    transition: all 1s;
+    }
+
+.button2:hover:before {
+    transform: rotateX(0);
+    
+    }
+.button2:hover::after {
+    transform: rotatey(0);
+    
+    }
+
+.button2:hover {
+    color: whitesmoke;
+}
+
+/* ----- BUTTON 3  ---- */
+
+.button3{
+    text-decoration: none;
+    font-size: 20px;
+    border: 3px solid #262626;
+    background-image: linear-gradient(red, #f44336, white);
+    padding: 20px 40px;
+    position: relative;
+    transition: all 0.3s;   
+    overflow: hidden;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.button3::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: azure;
+    transform: translateX(-100%) rotate(45deg);
+    transition: all 0.3s;
+
+}
+
+.button3:hover {
+    background-image: linear-gradient(rgb(11, 0, 213), #2b6cb7, rgb(234, 232, 240));
+}
+
+.button3:hover::before {
+    transform: translateX(100%) rotate(45deg);
+}
+
+/* --------- BUTTON 4 ---------*/
+
+.button4{
+    text-decoration: none;
+    font-size: 20px;
+    border: 3px solid tomato;
+    color: tomato;
+    padding: 20px 40px;
+    position: relative;
+    transition: all 0.5s;   
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.button4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: tomato;
+    border-radius: 0 0 50% 50%;
+    height: 0%;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+.button4:hover::before {
+    height: 170%;
+    
+}
+
+.button4:hover{
+    color:white;
+}
